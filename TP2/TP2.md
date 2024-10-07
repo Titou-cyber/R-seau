@@ -4,6 +4,7 @@
 
 * PS C:\Windows\System32> Get-NetIPAddress -InterfaceAlias "Ethernet"
 
+'''
  IPAddress         : fe80::f17:1113:dcc7:3e5c%11
  InterfaceIndex    : 11
  InterfaceAlias    : Ethernet
@@ -31,8 +32,8 @@
  PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
  SkipAsSource      : False
  PolicyStore       : ActiveStore
+'''
 
- 
 PS C:\Windows\System32> ping 10.67.69.132
 
 Envoi d’une requête 'Ping'  10.67.69.132 avec 32 octets de données :
