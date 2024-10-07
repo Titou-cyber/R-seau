@@ -2,35 +2,37 @@
 
 1. Quelques pings
 
-PS C:\Windows\System32> Get-NetIPAddress -InterfaceAlias "Ethernet"
+* PS C:\Windows\System32> Get-NetIPAddress -InterfaceAlias "Ethernet"
 
-IPAddress         : fe80::f17:1113:dcc7:3e5c%11
-InterfaceIndex    : 11
-InterfaceAlias    : Ethernet
-AddressFamily     : IPv6
-Type              : Unicast
-PrefixLength      : 64
-PrefixOrigin      : WellKnown
-SuffixOrigin      : Link
-AddressState      : Preferred
-ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
-PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
-SkipAsSource      : False
-PolicyStore       : ActiveStore
+ IPAddress         : fe80::f17:1113:dcc7:3e5c%11
+ InterfaceIndex    : 11
+ InterfaceAlias    : Ethernet
+ AddressFamily     : IPv6
+ Type              : Unicast
+ PrefixLength      : 64
+ PrefixOrigin      : WellKnown
+ SuffixOrigin      : Link
+ AddressState      : Preferred
+ ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+ PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+ SkipAsSource      : False
+ PolicyStore       : ActiveStore
 
-IPAddress         : 10.67.69.133
-InterfaceIndex    : 11
-InterfaceAlias    : Ethernet
-AddressFamily     : IPv4
-Type              : Unicast
-PrefixLength      : 24
-PrefixOrigin      : Manual
-SuffixOrigin      : Manual
-AddressState      : Preferred
-ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
-PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
-SkipAsSource      : False
-PolicyStore       : ActiveStore
+ IPAddress         : 10.67.69.133
+ InterfaceIndex    : 11
+ InterfaceAlias    : Ethernet
+ AddressFamily     : IPv4
+ Type              : Unicast
+ PrefixLength      : 24
+ PrefixOrigin      : Manual
+ SuffixOrigin      : Manual
+ AddressState      : Preferred
+ ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+ PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+ SkipAsSource      : False
+ PolicyStore       : ActiveStore
+
+ 
 PS C:\Windows\System32> ping 10.67.69.132
 
 Envoi d’une requête 'Ping'  10.67.69.132 avec 32 octets de données :
