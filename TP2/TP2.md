@@ -55,14 +55,14 @@ Durée approximative des boucles en millisecondes :
 
 * II. Utilisation des ports
  ```
-PS C:\Users\rapha\Downloads\netcat-1.11> .\nc.exe 10.67.69.232 9999
+PS C:\Users\titou\Downloads\netcat-1.11> .\nc.exe 10.67.69.232 9999
 test
 hello 
 coucou
 ```
 
 ```
-PS C:\Users\rapha\Downloads\netcat-1.11> netstat -a -n -b
+PS C:\Users\titou\Downloads\netcat-1.11> netstat -a -n -b
 
 Connexions actives
 
@@ -73,7 +73,7 @@ Connexions actives
 Changements je passe PC serveur :
 
 ```
-PS C:\Users\rapha\Downloads\netcat-1.11> netstat -b -a
+PS C:\Users\titou\Downloads\netcat-1.11> netstat -b -a
 
 Connexions actives
 
@@ -83,13 +83,13 @@ Connexions actives
  ```
 
  ```
-PS C:\Users\rapha\Downloads\netcat-1.11> ./nc64.exe -l -p 9999
+PS C:\Users\titou\Downloads\netcat-1.11> ./nc64.exe -l -p 9999
 salut
 coucou
 ```
 
 ```
-PS C:\Users\rapha\Downloads\netcat-1.11> netstat -b -n
+PS C:\Users\titou\Downloads\netcat-1.11> netstat -b -n
 
 Connexions actives
 
@@ -106,24 +106,31 @@ HTTP.pcapng a l'appui
 2. Autres services
 
 Youtube sur netstat :  
+```
 [msedge.exe]
 UDP    0.0.0.0:51365          91.68.245.16:443
+```
 
-Steam sur nestat : 
+Steam sur nestat :
+``` 
 [Among Us.exe]
 TCP    192.168.1.50:14106     13.69.141.149:443      ESTABLISHED
+```
 
 Discord sur netstat :
+```
 [Discord.exe]
 TCP    192.168.1.50:15260     162.159.135.232:443    ESTABLISHED
+```
 
 Outlook sur netstat : 
-
+```
 [olk.exe]
 TCP    [2a01:cb19:a23:f00:5c0e:7b8:fb99:dc1]:18123  [2620:1ec:c11::239]:443  ESTABLISHED
+```
 
 LenovoVantage sur netstat : 
-
+```
 [LenovoVantageService.exe]
 TCP    192.168.1.50:18252     2.22.57.22:443         ESTABLISHED
-
+```
