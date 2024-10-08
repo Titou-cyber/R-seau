@@ -2,27 +2,33 @@
 
 🌞 Adresses IP de ta machine
 
+```
 PS C:\Users\titou> ipconfig
 
 Carte réseau sans fil Wi-Fi :
 
    Adresse IPv4. . . . . . . . . . . . . .: 10.33.78.249
+```
 
-
+```
 PS C:\Users\titou> ipconfig
 
 Carte Ethernet Ethernet 2 :
 
    Adresse IPv4. . . . . . . . . . . . . .: 192.168.56.1
+```
 
 🌞 Si t'as un accès internet normal, d'autres infos sont forcément dispos...
 
+```
 PS C:\Users\titou> ipconfig
 
 Carte réseau sans fil Wi-Fi :
 
    Passerelle par défaut. . . . . . . . . : 10.33.79.254
+```
 
+```
 PS C:\Users\titou> ipconfig /all
 
 Carte réseau sans fil Wi-Fi :
@@ -30,13 +36,17 @@ Carte réseau sans fil Wi-Fi :
    Serveurs DNS. . .  . . . . . . . . . . : 8.8.8.8
                                        1.1.1.1
                                        PS C:\Users\titou> ipconfig /all
+```
 
+```
 Carte réseau sans fil Wi-Fi :
 
    Serveur DHCP . . . . . . . . . . . . . : 10.33.79.254
-  
+```
+
 🌟 BONUS : Détermine s'il y a un pare-feu actif sur ta machine
 
+```
 PS C:\Users\titou> Netsh advfirewall show allprofiles
 
 Paramètres Profil de domaine :
@@ -90,6 +100,7 @@ FileName                              %systemroot%\system32\LogFiles\Firewall\pf
 MaxFileSize                           4096
 
 Ok.
+```
 
 II. Utiliser le réseau
 
@@ -97,6 +108,7 @@ II. Utiliser le réseau
 
 toi-même !
 
+```
 PS C:\Users\titou> ping 10.33.78.249
 
 Envoi d’une requête 'Ping'  10.33.78.249 avec 32 octets de données :
@@ -109,11 +121,13 @@ Statistiques Ping pour 10.33.78.249:
     Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
 Durée approximative des boucles en millisecondes :
     Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
+```
 
 🌞 Envoie un ping vers...
 
 vers l'adresse IP 127.0.0.1
 
+```
 PS C:\Users\titou> ping 127.0.0.1
 
 Envoi d’une requête 'Ping'  127.0.0.1 avec 32 octets de données :
@@ -126,10 +140,12 @@ Statistiques Ping pour 127.0.0.1:
     Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
 Durée approximative des boucles en millisecondes :
     Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
+```
 
 🌞 On continue avec ping. Envoie un ping vers...
 
 ta passerelle
+```
 
 PS C:\Users\titou> ping 10.33.79.254
 
@@ -141,10 +157,12 @@ Délai d’attente de la demande dépassé.
 
 Statistiques Ping pour 10.33.79.254:
     Paquets : envoyés = 4, reçus = 0, perdus = 4 (perte 100%),
+```
 
 un(e) pote sur le réseau
 
- ping 10.33.66.78
+```
+PS C:\Users\titou> ping 10.33.66.78
 
 Envoi d’une requête 'Ping'  10.33.66.78 avec 32 octets de données :
 Réponse de 10.33.66.78 : octets=32 temps=41 ms TTL=64
@@ -156,9 +174,11 @@ Statistiques Ping pour 10.33.66.78:
     Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
 Durée approximative des boucles en millisecondes :
     Minimum = 41ms, Maximum = 78ms, Moyenne = 59ms
+```
 
 un site internet
 
+```
 PS C:\Users\titou> ping www.thinkerview.com
 
 Envoi d’une requête 'ping' sur www.thinkerview.com [188.114.96.7] avec 32 octets de données :
@@ -171,6 +191,7 @@ Statistiques Ping pour 188.114.96.7:
     Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
 Durée approximative des boucles en millisecondes :
     Minimum = 15ms, Maximum = 19ms, Moyenne = 17ms
+```
 
 🌞 Faire une requête DNS à la main
 
@@ -178,6 +199,7 @@ PS C:\Users\titou> nslookup
 Serveur par dÚfaut :   dns.google
 Address:  8.8.8.8
 
+```
 > www.thinkerview.com
 Serveur :   dns.google
 Address:  8.8.8.8
@@ -188,7 +210,9 @@ Addresses:  2a06:98c1:3121::7
           2a06:98c1:3120::7
           188.114.97.7
           188.114.96.7
+```
 
+```
 > www.wikileaks.org
 Serveur :   dns.google
 Address:  8.8.8.8
@@ -198,7 +222,9 @@ Nom :    wikileaks.org
 Addresses:  80.81.248.21
           51.159.197.136
 Aliases:  www.wikileaks.org
+```
 
+```
 > www.torproject.org
 Serveur :   dns.google
 Address:  8.8.8.8
@@ -215,6 +241,7 @@ Addresses:  2a01:4f9:c010:19eb::1
           116.202.120.166
           204.8.99.146
           95.216.163.36
+```
 
 III. Sniffer le réseau
 
@@ -222,6 +249,7 @@ IV. Network scanning et adresses IP
 
 🌞 Effectue un scan du réseau auquel tu es connecté
 
+```
 PS C:\Users\titou> nmap -sn -PR 10.33.64.0/20
 Starting Nmap 7.95 ( https://nmap.org ) at 2024-09-27 11:54 Paris, Madrid (heure dÆÚtÚ)
 Stats: 0:00:05 elapsed; 0 hosts completed (0 up), 4095 undergoing ARP Ping Scan
@@ -258,11 +286,14 @@ MAC Address: CC:08:FA:83:C8:7B (Apple)
 Nmap scan report for 10.33.69.132
 Host is up (0.12s latency).
 MAC Address: 4C:44:5B:41:6B:B7 (Intel Corporate)
+```
 
 🌞 Changer d'adresse IP
 
+```
 PS C:\Users\titou> ipconfig
 
 Carte réseau sans fil Wi-Fi :
 
   IPv4. . . . . . . . . . . . . .: 10.33.77.171
+```
