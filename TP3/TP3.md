@@ -90,3 +90,41 @@ Interface : 10.33.78.249 --- 0x4
 [arp1](arp1.pcapng)
 
 * II. ARP dans un réseau local
+
+1. Basics
+
+☀️ Déterminer
+
+pour la carte réseau impliquée dans le partage de connexion (carte WiFi ?)
+
+son adresse IP au sein du réseau local formé par le partage de co
+```
+Carte réseau sans fil Wi-Fi :
+   Adresse IPv4. . . . . . . . . . . . . .: 172.20.10.7(préféré)
+```
+
+son adresse Mac
+```
+Carte réseau sans fil Wi-Fi :
+   Adresse physique . . . . . . . . . . . : 2C-98-11-56-BF-F1
+```
+
+☀️ DIY
+
+Avant :
+```
+PS C:\Windows\system32> ipconfig
+
+Carte réseau sans fil Wi-Fi :
+
+   Adresse IPv4. . . . . . . . . . . . . .: 172.20.10.7
+```
+
+Après :
+```
+PS C:\Windows\system32> ipconfig
+
+Carte réseau sans fil Wi-Fi :
+
+   Adresse IPv4. . . . . . . . . . . . . .: 172.20.10.9
+```
