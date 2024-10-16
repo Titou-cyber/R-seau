@@ -128,3 +128,81 @@ Carte réseau sans fil Wi-Fi :
 
    Adresse IPv4. . . . . . . . . . . . . .: 172.20.10.9
 ```
+
+☀️ Pingz !
+
+Ping copain : 
+
+```
+PS C:\Windows\system32> ping 172.20.10.4
+
+Envoi d’une requête 'Ping'  172.20.10.4 avec 32 octets de données :
+Réponse de 172.20.10.4 : octets=32 temps=29 ms TTL=128
+Réponse de 172.20.10.4 : octets=32 temps=39 ms TTL=128
+Réponse de 172.20.10.4 : octets=32 temps=204 ms TTL=128
+Réponse de 172.20.10.4 : octets=32 temps=58 ms TTL=128
+
+Statistiques Ping pour 172.20.10.4:
+    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
+Durée approximative des boucles en millisecondes :
+    Minimum = 29ms, Maximum = 204ms, Moyenne = 82ms
+```
+
+Ping Google :
+
+```
+PS C:\Windows\system32> ping google.com
+
+Envoi d’une requête 'ping' sur google.com [2a00:1450:4007:80c::200e] avec 32 octets de données :
+Réponse de 2a00:1450:4007:80c::200e : temps=62 ms
+Réponse de 2a00:1450:4007:80c::200e : temps=81 ms
+Réponse de 2a00:1450:4007:80c::200e : temps=78 ms
+Réponse de 2a00:1450:4007:80c::200e : temps=76 ms
+
+Statistiques Ping pour 2a00:1450:4007:80c::200e:
+    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
+Durée approximative des boucles en millisecondes :
+    Minimum = 62ms, Maximum = 81ms, Moyenne = 74ms
+```
+
+2. ARP
+
+☀️ Affichez votre table ARP !
+
+```
+PS C:\Windows\system32> arp -a
+
+Interface : 172.20.10.9 --- 0x4
+  Adresse Internet      Adresse physique      Type
+  172.20.10.1           e6-b2-fb-e8-21-64     dynamique
+  172.20.10.2           28-c5-d2-03-3c-2f     dynamique
+  172.20.10.4           10-68-38-8e-2e-ef     dynamique
+  172.20.10.15          ff-ff-ff-ff-ff-ff     statique
+  224.0.0.22            01-00-5e-00-00-16     statique
+  224.0.0.251           01-00-5e-00-00-fb     statique
+  224.0.0.252           01-00-5e-00-00-fc     statique
+  224.77.77.77          01-00-5e-4d-4d-4d     statique
+```
+
+Après avoir supprimé :
+
+```
+PS C:\Windows\system32> arp -a
+
+Interface : 172.20.10.9 --- 0x4
+  Adresse Internet      Adresse physique      Type
+  172.20.10.1           e6-b2-fb-e8-21-64     dynamique
+  172.20.10.15          ff-ff-ff-ff-ff-ff     statique
+  224.0.0.22            01-00-5e-00-00-16     statique
+  224.0.0.251           01-00-5e-00-00-fb     statique
+  224.0.0.252           01-00-5e-00-00-fc     statique
+  224.77.77.77          01-00-5e-4d-4d-4d     statique
+```
+
+☀️ Capture arp2.pcap
+
+[arp2](arp2.pcapng)
+
+3. Bonus : ARP poisoning
+
+
