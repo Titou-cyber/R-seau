@@ -139,13 +139,15 @@ ping: sendmsg: Required key not available
 capturez ces pings, en capturant sur l'interface host-ononly
 ne vous attendez pas à vraiment voir directement des pings... vous regardez du trafic VPN
 
-
+[Ping1](Ping1 tp7.pcap)
 
 🌞 Capture ping2_vpn.pcap
 
 capturez ces pings, en capturant sur l'interface wg0
 
 vous allez voir vos vrais ping
+
+[Ping2](ping2 tp7.pcap)
 
 🌞 Prouvez que vous avez toujours un accès internet
 
