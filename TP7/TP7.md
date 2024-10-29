@@ -45,6 +45,10 @@ titou@client1:~$ curl http://sitedefou.tp7.b1
 meow !
 ```
 
+🌞 Capture tcp_http.pcap
+
+[http](TP7http.pcap)
+
 🌞 Lister les ports en écoute sur la machine
 
 ```
@@ -63,6 +67,13 @@ success
 success
 success
 ```
+
+B. Test test test analyyyze
+
+🌞 Capture tcp_https.pcap
+
+[https](Tp7https.pcap)
+
 
 * III. Serveur VPN
 
